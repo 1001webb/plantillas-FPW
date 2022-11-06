@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="/css/forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h2>Elementos de Forms</h2>
+    <p>Estilos para tipos de Inputs.</p>
+
+    <div class="container">
+        <form>
+            <div class="row">
+                <div class="col-25">
+                    <label for="defInput">Default Input</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="defInput" name="defInput" placeholder="Default Input">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="disInput">Disabled Input</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="disInput" name="disInput" placeholder="Disabled Input" disabled>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="reOnInput">Read-Only Input</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="reOnInput" name="reOnInput" placeholder="Read-Only Input" readonly>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="subject">Text Area Input</label>
+                </div>
+                <div class="col-75">
+                    <textarea id="subject" name="subject" placeholder="Write something.."
+                        style="height:200px"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="birthDate">Date Input</label>
+                </div>
+                <div class="col-75">
+                    <input type="date" id="birthDate" name="birthDate">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Password</label>
+                </div>
+                <div class="col-75">
+                    <input type="password" id="lname" name="lastname" placeholder="Password">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="autoComplete">AutoComplete</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="autoComplete" name="autoComplete" placeholder="Write something.."
+                        autocomplete="on">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="select">Select</label>
+                </div>
+                <div class="col-75">
+                    <select id="select" name="select">
+                        <option value="option0">Choose Option:</option>
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="selCustom">Select Custom</label>
+                </div>
+                <div class="col-75">
+                    <select id="selCustom" name="selCustom">
+                        <option value="0">Select car:</option>
+                        <option value="2">Honda</option>
+                        <option value="3">Ford</option>
+                        <option value="10">Nissan</option>
+                        <option value="11">Toyota</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Select Grouped</label>
+                </div>
+                <div class="col-75">
+                    <select id="dino-select">
+                        <optgroup label="Theropods">
+                            <option>Tyrannosaurus</option>
+                            <option>Velociraptor</option>
+                            <option>Deinonychus</option>
+                        </optgroup>
+                        <optgroup label="Sauropods">
+                            <option>Diplodocus</option>
+                            <option>Saltasaurus</option>
+                            <option>Apatosaurus</option>
+                        </optgroup>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Select Multiple</label>
+                </div>
+                <div class="col-75">
+                    <select id="country" name="country" multiple>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="china">China</option>
+                        <option value="egipt">Egipt</option>
+                        <option value="cr">Costa Rica</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Input Tags</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Checkboxes and Radios</label>
+                </div>
+                <div class="col-75">
+                    <input type="checkbox" id="checkbox1" name="checkbox1" value="ck1" >
+                    <label for="checkbox1"> Option one. select more than one options</label><br>
+                    <input type="checkbox" id="checkbox2" name="checkbox2" value="ck2" >
+                    <label for="checkbox2"> Option two. select more than one options</label><br>
+
+                    <input type="radio" id="radio1" name="radio1" value="rd1">
+                    <label for="radio1"> Option one. only select more one option</label><br>
+                    <input type="radio" id="radio2" name="radio2" value="rd2" checked>
+                    <label for="radio2">Option two. only select more one option</label><br>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Checkboxes and Radios</label>
+                </div>
+                <div class="col-75">
+                    <input type="checkbox" id="checkbox1" name="checkbox1" value="ck1" checked>
+                    <label for="checkbox1"> Checked</label><br>
+                    <input type="checkbox" id="checkbox2" name="checkbox2" value="ck2" >
+                    <label for="checkbox2"> Unchecked</label><br>
+                    <input type="checkbox" id="checkbox3" name="checkbox3" value="ck3" disabled>
+                    <label for="checkbox3"> Disabled</label><br> 
+                    <input type="checkbox" id="checkbox4" name="checkbox4" value="ck4" disabled checked>
+                    <label for="checkbox4"> Disabled & Checked</label><br>                    
+                    
+                    <input type="radio" id="radio1" name="radio1" value="rd1" checked>
+                    <label for="radio1"> Checked</label><br>
+                    <input type="radio" id="radio2" name="radio2" value="rd2" >
+                    <label for="radio2">Unchecked</label><br>    
+                    <input type="radio" id="radio3" name="radio3" value="rd3" disabled >
+                    <label for="radio3">Disabled</label><br>    
+                    <input type="radio" id="radio4" name="radio4" value="rd4" disabled checked >
+                    <label for="radio4">Disabled & Checked</label><br>                                                       
+                </div>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
