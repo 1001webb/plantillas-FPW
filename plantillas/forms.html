@@ -11,8 +11,9 @@
 
 <body>
     <h2>Elementos de Forms</h2>
-    <p>Estilos para tipos de Inputs.</p>
-    <div class="container">
+    <p> Estilos para tipos de Inputs.</p>
+
+    <div class="contenedor">
         <form>
             <div class="row">
                 <div class="col-25">
@@ -35,16 +36,17 @@
                     <label for="reOnInput">Read-Only Input</label>
                 </div>
                 <div class="col-75">
-                    <input type="text" id="reOnInput" name="reOnInput" class="text" placeholder="Read-Only Input" readonly>
+                    <input type="text" id="reOnInput" name="reOnInput" class="text" placeholder="Read-Only Input"
+                        readonly>
                 </div>
             </div>
             <br>
             <div class="row">
                 <div class="col-25">
-                    <label for="lname">Password</label>
+                    <label for="password">Password</label>
                 </div>
                 <div class="col-75">
-                    <input type="password" id="lname" name="lastname" placeholder="Password">
+                    <input type="password" class="password" id="password" name="password" placeholder="Password">
                 </div>
             </div>
             <br>
@@ -100,14 +102,21 @@
                     <label for="lname">Checkboxes</label>
                 </div>
                 <div class="col-75">
-                    <input type="checkbox" id="checkbox1" name="checkbox1" value="ck1" checked>
-                    <label for="checkbox1"> Checked</label><br>
-                    <input type="checkbox" id="checkbox2" name="checkbox2" value="ck2" >
+                    
+                    <label class="container">One
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmark"></span>
+                    </label>
+
+                    <!-- <input type="checkbox" id="checkbox1" name="checkbox1" value="ck1" checked>
+                    <label for="checkbox1"> Checked</label><br> -->
+
+                    <input type="checkbox" id="checkbox2" name="checkbox2" value="ck2">
                     <label for="checkbox2"> Unchecked</label><br>
                     <input type="checkbox" id="checkbox3" name="checkbox3" value="ck3" disabled>
-                    <label for="checkbox3"> Disabled</label><br> 
+                    <label for="checkbox3"> Disabled</label><br>
                     <input type="checkbox" id="checkbox4" name="checkbox4" value="ck4" disabled checked>
-                    <label for="checkbox4"> Disabled & Checked</label><br>                   
+                    <label for="checkbox4"> Disabled & Checked</label><br>
                 </div>
             </div>
             <br>
@@ -118,12 +127,12 @@
                 <div class="col-75">
                     <input type="radio" id="radio1" name="radio1" value="rd1" checked>
                     <label for="radio1"> Checked</label><br>
-                    <input type="radio" id="radio2" name="radio2" value="rd2" >
-                    <label for="radio2">Unchecked</label><br>    
-                    <input type="radio" id="radio3" name="radio3" value="rd3" disabled >
-                    <label for="radio3">Disabled</label><br>    
-                    <input type="radio" id="radio4" name="radio4" value="rd4" disabled checked >
-                    <label for="radio4">Disabled & Checked</label><br>                                                       
+                    <input type="radio" id="radio2" name="radio2" value="rd2">
+                    <label for="radio2">Unchecked</label><br>
+                    <input type="radio" id="radio3" name="radio3" value="rd3" disabled>
+                    <label for="radio3">Disabled</label><br>
+                    <input type="radio" id="radio4" name="radio4" value="rd4" disabled checked>
+                    <label for="radio4">Disabled & Checked</label><br>
                 </div>
             </div>
             <br>
@@ -132,7 +141,7 @@
                     <label for="btnCancel">Button Cancel</label>
                 </div>
                 <div class="col-75">
-                    <input type="button" value="Cancel">
+                    <input type="button" value="Cancel" class="btnCancel">
                 </div>
             </div>
             <div class="row">
@@ -140,7 +149,7 @@
                     <label for="btnReset">Button Reset</label>
                 </div>
                 <div class="col-75">
-                    <input type="reset" value="Reset">
+                    <input type="reset" value="Reset" class="btnReset">
                 </div>
             </div>
             <div class="row">
@@ -148,7 +157,7 @@
                     <label for="btnSubmit">Button Submit</label>
                 </div>
                 <div class="col-75">
-                    <input type="submit" value="Submit">
+                    <input type="submit" value="Submit" class="btnSubmit">
                 </div>
             </div>
         </form>
