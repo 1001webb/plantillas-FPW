@@ -55,7 +55,7 @@
                     <label for="select">Select</label>
                 </div>
                 <div class="col-75">
-                    <select id="select" name="select">
+                    <select id="select" name="select" class="classic">
                         <option value="option0">Choose Option:</option>
                         <option value="option1">Option 1</option>
                         <option value="option2">Option 2</option>
@@ -102,21 +102,22 @@
                     <label for="lname">Checkboxes</label>
                 </div>
                 <div class="col-75">
-                    
-                    <label class="container">One
+                    <label class="containerCheckbox">Checked
                         <input type="checkbox" checked="checked">
-                        <span class="checkmark"></span>
+                        <span class="checkmarkCheckbox"></span>
                     </label>
-
-                    <!-- <input type="checkbox" id="checkbox1" name="checkbox1" value="ck1" checked>
-                    <label for="checkbox1"> Checked</label><br> -->
-
-                    <input type="checkbox" id="checkbox2" name="checkbox2" value="ck2">
-                    <label for="checkbox2"> Unchecked</label><br>
-                    <input type="checkbox" id="checkbox3" name="checkbox3" value="ck3" disabled>
-                    <label for="checkbox3"> Disabled</label><br>
-                    <input type="checkbox" id="checkbox4" name="checkbox4" value="ck4" disabled checked>
-                    <label for="checkbox4"> Disabled & Checked</label><br>
+                    <label class="containerCheckbox">Unchecked
+                        <input type="checkbox">
+                        <span class="checkmarkCheckbox"></span>
+                    </label>
+                    <label class="containerCheckbox" >Disabled
+                        <input type="checkbox" disabled>
+                        <span class="checkmarkCheckbox"></span>
+                    </label>
+                    <label class="containerCheckbox">Disabled & Checked
+                        <input type="checkbox" disabled checked="checked">
+                        <span class="checkmarkCheckbox"></span>
+                    </label>
                 </div>
             </div>
             <br>
@@ -125,14 +126,24 @@
                     <label for="lname">Radios</label>
                 </div>
                 <div class="col-75">
-                    <input type="radio" id="radio1" name="radio1" value="rd1" checked>
-                    <label for="radio1"> Checked</label><br>
-                    <input type="radio" id="radio2" name="radio2" value="rd2">
-                    <label for="radio2">Unchecked</label><br>
-                    <input type="radio" id="radio3" name="radio3" value="rd3" disabled>
-                    <label for="radio3">Disabled</label><br>
-                    <input type="radio" id="radio4" name="radio4" value="rd4" disabled checked>
-                    <label for="radio4">Disabled & Checked</label><br>
+
+
+                    <label class="containerRadioButton">Checked
+                        <input type="radio" checked="checked" name="radio1">
+                        <span class="checkmarkRadioButton"></span>
+                      </label>
+                      <label class="containerRadioButton">Unchecked
+                        <input type="radio" name="radio2">
+                        <span class="checkmarkRadioButton"></span>
+                      </label>
+                      <label class="containerRadioButton">Disabled
+                        <input type="radio" name="radio3" disabled >
+                        <span class="checkmarkRadioButton"></span>
+                      </label>
+                      <label class="containerRadioButton">Disabled & Checked
+                        <input type="radio" name="radio4" disabled checked="checked">
+                        <span class="checkmarkRadioButton"></span>
+                      </label>
                 </div>
             </div>
             <br>
