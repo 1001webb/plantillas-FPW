@@ -68,7 +68,7 @@
                     <label for="country">Select Grouped</label>
                 </div>
                 <div class="col-75">
-                    <select id="dino-select"  class="round">
+                    <select id="dino-select" class="grouped">
                         <optgroup label="Theropods">
                             <option>Tyrannosaurus</option>
                             <option>Velociraptor</option>
@@ -87,13 +87,27 @@
                     <label for="country">Select Multiple</label>
                 </div>
                 <div class="col-75">
-                    <select id="country" name="country" multiple>
-                        <option value="australia">Australia</option>
-                        <option value="canada">Canada</option>
-                        <option value="china">China</option>
-                        <option value="egipt">Egipt</option>
-                        <option value="cr">Costa Rica</option>
-                    </select>
+                    <details class="multiple-select">
+                        <summary>Select Countries</summary>
+                        <div class="multiple-select-dropdown">
+                            <label>
+                                <input type="checkbox" hidden name="select" value="1">
+                                <span class="content">Australia</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" hidden name="select" value="2">
+                                <span class="content">Canada</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" hidden name="select" value="3">
+                                <span class="content">China</span>
+                            </label>
+                            <label>
+                                <input type="checkbox" hidden name="select" value="4">
+                                <span class="content">Egipt</span>
+                            </label>
+                        </div>
+                    </details>
                 </div>
             </div>
             <br>
@@ -110,7 +124,7 @@
                         <input type="checkbox">
                         <span class="checkmarkCheckbox"></span>
                     </label>
-                    <label class="containerCheckbox" >Disabled
+                    <label class="containerCheckbox">Disabled
                         <input type="checkbox" disabled>
                         <span class="checkmarkCheckbox"></span>
                     </label>
@@ -126,24 +140,22 @@
                     <label for="lname">Radios</label>
                 </div>
                 <div class="col-75">
-
-
                     <label class="containerRadioButton">Checked
                         <input type="radio" checked="checked" name="radio1">
                         <span class="checkmarkRadioButton"></span>
-                      </label>
-                      <label class="containerRadioButton">Unchecked
+                    </label>
+                    <label class="containerRadioButton">Unchecked
                         <input type="radio" name="radio2">
                         <span class="checkmarkRadioButton"></span>
-                      </label>
-                      <label class="containerRadioButton">Disabled
-                        <input type="radio" name="radio3" disabled >
+                    </label>
+                    <label class="containerRadioButton">Disabled
+                        <input type="radio" name="radio3" disabled>
                         <span class="checkmarkRadioButton"></span>
-                      </label>
-                      <label class="containerRadioButton">Disabled & Checked
+                    </label>
+                    <label class="containerRadioButton">Disabled & Checked
                         <input type="radio" name="radio4" disabled checked="checked">
                         <span class="checkmarkRadioButton"></span>
-                      </label>
+                    </label>
                 </div>
             </div>
             <br>
@@ -177,3 +189,12 @@
 </body>
 
 </html>
+<script>
+    const result = document.querySelector('.result')
+    const form = document.querySelector('form')
+    form.addEventListener('submit', function (e) {
+        const formData = new FormData(form)
+        result.innerText = JSON.stringify(formData.getAll('select'), null, 2)
+        e.preventDefault();
+    })
+</script>
