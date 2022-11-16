@@ -248,12 +248,7 @@ body {
   .show {display:block;}
 
   /**********************************************************************************************************************  SPLIT DROPDOWN  */ 
-
-  .btn-group {
-    display: flex;
-    margin-right: 0.5rem;
-  }
-
+  
   .split-btn{
     border-radius: 0.5rem 0 0 0.5rem;
   }
