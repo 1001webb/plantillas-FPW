@@ -1,0 +1,27 @@
+.striped_table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.striped_table tr:nth-child(even){background-color: #dfdfdf}
+.contrast tr:nth-child(even){background-color: #dff138}
+.striped_table td {
+    padding: 8px;
+}
+.striped_table th {
+    background-color: #bbffbd;
+    color: rgb(255, 255, 255);
+}
+
+
+.grated_table{
+    border: 2px solid #000;
+    border-collapse: collapse;
+    width: 100%;
+}
+.grated_table tr{
+    border: 1px solid #000;
+    text-align: left;
+}
+.grated_table td{
+    padding: 8px;
+}

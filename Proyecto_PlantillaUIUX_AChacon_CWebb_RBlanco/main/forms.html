@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles/forms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Forms</title>
+</head>
+
+<body>
+
+    <div class="nav-right visible-xs">
+        <div class="button" id="btn">
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"></div>
+        </div>
+    </div>
+    <!-- nav-right -->
+    <main>
+        <nav>
+            <div class="nav-right hidden-xs">
+                <div class="button" id="btn">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+                </div>
+            </div>
+            <!-- nav-right -->
+        </nav>
+
+        <h2>Elementos de Forms</h2>
+        <p> Estilos para tipos de Inputs.</p>
+    
+        <div class="contenedor">
+            <form>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="defInput">Default Input</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="defInput" name="defInput" class="text" placeholder="Default Input">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="disInput">Disabled Input</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="disInput" name="disInput" class="text" placeholder="Disabled Input" disabled>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="reOnInput">Read-Only Input</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="reOnInput" name="reOnInput" class="text" placeholder="Read-Only Input"
+                            readonly>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="password">Password</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="password" class="password" id="password" name="password" placeholder="Password">
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="select">Select</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="select" name="select" class="classic">
+                            <option value="option0">Choose Option:</option>
+                            <option value="option1">Option 1</option>
+                            <option value="option2">Option 2</option>
+                            <option value="option3">Option 3</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Select Grouped</label>
+                    </div>
+                    <div class="col-75">
+                        <select id="dino-select" class="grouped">
+                            <optgroup label="Theropods">
+                                <option>Tyrannosaurus</option>
+                                <option>Velociraptor</option>
+                                <option>Deinonychus</option>
+                            </optgroup>
+                            <optgroup label="Sauropods">
+                                <option>Diplodocus</option>
+                                <option>Saltasaurus</option>
+                                <option>Apatosaurus</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country">Select Multiple</label>
+                    </div>
+                    <div class="col-75">
+                        <details class="multiple-select">
+                            <summary>Select Countries</summary>
+                            <div class="multiple-select-dropdown">
+                                <label>
+                                    <input type="checkbox" hidden name="select" value="1">
+                                    <span class="content">Australia</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" hidden name="select" value="2">
+                                    <span class="content">Canada</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" hidden name="select" value="3">
+                                    <span class="content">China</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" hidden name="select" value="4">
+                                    <span class="content">Egipt</span>
+                                </label>
+                            </div>
+                        </details>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Checkboxes</label>
+                    </div>
+                    <div class="col-75">
+                        <label class="containerCheckbox">Checked
+                            <input type="checkbox" checked="checked">
+                            <span class="checkmarkCheckbox"></span>
+                        </label>
+                        <label class="containerCheckbox">Unchecked
+                            <input type="checkbox">
+                            <span class="checkmarkCheckbox"></span>
+                        </label>
+                        <label class="containerCheckbox">Disabled
+                            <input type="checkbox" disabled>
+                            <span class="checkmarkCheckbox"></span>
+                        </label>
+                        <label class="containerCheckbox">Disabled & Checked
+                            <input type="checkbox" disabled checked="checked">
+                            <span class="checkmarkCheckbox"></span>
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="lname">Radios</label>
+                    </div>
+                    <div class="col-75">
+                        <label class="containerRadioButton">Checked
+                            <input type="radio" checked="checked" name="radio1">
+                            <span class="checkmarkRadioButton"></span>
+                        </label>
+                        <label class="containerRadioButton">Unchecked
+                            <input type="radio" name="radio2">
+                            <span class="checkmarkRadioButton"></span>
+                        </label>
+                        <label class="containerRadioButton">Disabled
+                            <input type="radio" name="radio3" disabled>
+                            <span class="checkmarkRadioButton"></span>
+                        </label>
+                        <label class="containerRadioButton">Disabled & Checked
+                            <input type="radio" name="radio4" disabled checked="checked">
+                            <span class="checkmarkRadioButton"></span>
+                        </label>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="btnCancel">Button Cancel</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="button" value="Cancel" class="btnCancel">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="btnReset">Button Reset</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="reset" value="Reset" class="btnReset">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-25">
+                        <label for="btnSubmit">Button Submit</label>
+                    </div>
+                    <div class="col-75">
+                        <input type="submit" value="Submit" class="btnSubmit">
+                    </div>
+                </div>
+            </form>
+
+
+            <pre>
+                <code>
+                    HTML Code:
+
+                    Default Input
+                        &lt;input type="text" id="defInput" name="defInput" class="text" placeholder="Default Input"&gt;
+                    
+                    Disabled Input
+                        &lt;input type="text" id="disInput" name="disInput" class="text" placeholder="Disabled Input" disabled&gt;
+                    
+                    Read-Only Input
+                        &lt;input type="text" id="reOnInput" name="reOnInput" class="text" placeholder="Read-Only Input"  readonly&gt;
+
+                    Password
+                        &lt;input type="password" class="password" id="password" name="password" placeholder="Password"&gt;
+
+                    Select 
+                        &lt;select id="select" name="select" class="classic"&gt;
+                            &lt;option value="option0"&gt;Choose Option:&lt;/option&gt;
+                            &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+                            &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+                            &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+                        &lt;/select&gt;
+
+                    Select Grouped
+                        &lt;select id="dino-select" class="grouped"&gt;
+                            &lt;optgroup label="Theropods"&gt;
+                                &lt;option&gt;Tyrannosaurus&lt;/option&gt;
+                                &lt;option&gt;Velociraptor&lt;/option&gt;
+                                &lt;option&gt;Deinonychus&lt;/option&gt;
+                            &lt;/optgroup&gt;
+                            &lt;optgroup label="Sauropods"&gt;
+                                &lt;option&gt;Diplodocus&lt;/option&gt;
+                                &lt;option&gt;Saltasaurus&lt;/option&gt;
+                                &lt;option&gt;Apatosaurus&lt;/option&gt;
+                            &lt;/optgroup&gt;
+                        &lt;/select&gt;     
+                    
+                    Select Multiple
+                        &lt;details class="multiple-select"&gt;
+                            &lt;summary&gt;Select Countries&lt;/summary&gt;
+                            &lt;div class="multiple-select-dropdown"&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" hidden name="select" value="1"&gt;
+                                    &lt;span class="content"&gt;Australia&lt;/span&gt;
+                                &lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" hidden name="select" value="2"&gt;
+                                    &lt;span class="content"&gt;Canada&lt;/span&gt;
+                                &lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" hidden name="select" value="3"&gt;
+                                    &lt;span class="content"&gt;China&lt;/span&gt;
+                                &lt;/label&gt;
+                                &lt;label&gt;
+                                    &lt;input type="checkbox" hidden name="select" value="4"&gt;
+                                    &lt;span class="content"&gt;Egipt&lt;/span&gt;
+                                &lt;/label&gt;
+                            &lt;/div&gt;
+                        &lt;/details&gt;     
+                    
+                    Checkboxes
+                        &lt;label class="containerCheckbox"&gt;Checked
+                            &lt;input type="checkbox" checked="checked"&gt;
+                            &lt;span class="checkmarkCheckbox"&gt;&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;label class="containerCheckbox"&gt;Unchecked
+                            &lt;input type="checkbox"&gt;
+                            &lt;span class="checkmarkCheckbox"&gt;&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;label class="containerCheckbox"&gt;Disabled
+                            &lt;input type="checkbox" disabled&gt;
+                            &lt;span class="checkmarkCheckbox"&gt;&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;label class="containerCheckbox"&gt;Disabled & Checked
+                            &lt;input type="checkbox" disabled checked="checked"&gt;
+                            &lt;span class="checkmarkCheckbox"&gt;&lt;/span&gt;
+                        &lt;/label&gt;   
+                        
+                    Radio Buttons
+                        &lt;label class="containerRadioButton"&gt;Checked
+                            &lt;input type="radio" checked="checked" name="radio1"&gt;
+                            &lt;span class="checkmarkRadioButton"&gt;&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;label class="containerRadioButton"&gt;Unchecked
+                            &lt;input type="radio" name="radio2"&gt;
+                            &lt;span class="checkmarkRadioButton"&gt;&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;label class="containerRadioButton"&gt;Disabled
+                            &lt;input type="radio" name="radio3" disabled&gt;
+                            &lt;span class="checkmarkRadioButton"&gt;&lt;/span&gt;
+                        &lt;/label&gt;
+                        &lt;label class="containerRadioButton"&gt;Disabled & Checked
+                            &lt;input type="radio" name="radio4" disabled checked="checked"&gt;
+                            &lt;span class="checkmarkRadioButton"&gt;&lt;/span&gt;
+                        &lt;/label&gt;                    
+                    
+                    Button Cancel
+                        &lt;input type="button" value="Cancel" class="btnCancel"&gt;
+
+                    Button Reset
+                        &lt;input type="reset" value="Reset" class="btnReset"&gt; 
+
+                    Button Submit
+                        &lt;input type="submit" value="Submit" class="btnSubmit"&gt;
+
+                </code>
+            </pre>
+        </div>
+
+    </main>
+
+    <div class="sidebar">
+        <ul class="sidebar-list">
+            <li class="sidebar-item"><a href="./botones.html" class="sidebar-anchor">Botones</a></li>
+            <li class="sidebar-item"><a href="./tables.html" class="sidebar-anchor">Tablas</a></li>
+            <li class="sidebar-item"><a href="#" class="sidebar-anchor">Forms</a></li>
+            <li class="sidebar-item"><a href="./generals.html" class="sidebar-anchor">Generales</a></li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function () {
+
+        function toggleSidebar() {
+            $(".button").toggleClass("active");
+            $("main").toggleClass("move-to-left");
+            $(".sidebar-item").toggleClass("active");
+        }
+
+        $(".button").on("click tap", function () {
+            toggleSidebar();
+        });
+
+        $(document).keyup(function (e) {
+            if (e.keyCode === 27) {
+                toggleSidebar();
+            }
+        });
+
+    });
+
+    const result = document.querySelector('.result')
+    const form = document.querySelector('form')
+    form.addEventListener('submit', function (e) {
+        const formData = new FormData(form)
+        result.innerText = JSON.stringify(formData.getAll('select'), null, 2)
+        e.preventDefault();
+    })
+</script>

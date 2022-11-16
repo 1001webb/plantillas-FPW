@@ -1,0 +1,164 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/**********************************************************************************************************************  TABS  */
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+    background-color: #f1f1f1;
+}
+
+.tablinks {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(199, 197, 197);
+    color: white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: rgb(94, 94, 94);
+    color: white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+/**********************************************************************************************************************  TAB DARK  */
+
+.tab-dark {
+    border: 1px solid #0f0f0f;
+    background-color: #0f0f0f;
+}
+
+.tab-dark .tablinks {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+.tab-dark button:hover {
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+/* Create an active/current tablink class */
+.tab-dark button.active {
+    background-color: rgb(243, 242, 242);
+    color: black;
+}
+
+/**********************************************************************************************************************  LISTS  */
+ul.list-dots {
+    list-style-type: circle;
+}
+
+ul.list-squares {
+    list-style-type: square;
+}
+
+ul.list-romans {
+    list-style-type: upper-roman;
+}
+
+ul.list-numbers {
+    list-style-type: decimal;
+}
+
+ul.list-romans {
+    list-style-type: upper-roman;
+}
+
+ul.list-alphabet {
+    list-style-type: lower-alpha;
+}
+
+/**********************************************************************************************************************  PROGRESS BAR  */
+.progress {
+  
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: #007bff;
+    transition: width 0.6s ease;
+}
+
+.progress-bar-default {
+    background-color: grey;
+    border-color: grey;
+    color: white;
+}
+
+.progress-bar-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    color: white;
+}
+
+.progress-bar-success {
+    background-color: #158d33;
+    border-color: #158d33;
+    color: white;
+}
+
+.progress-bar-info {
+    background-color: #007bff;
+    color: white;
+}
+
+.progress-bar-warning {
+    background-color: #ffc238;
+    border-color: #ffc238;
+    color: black;
+}
+
+.progress-bar-danger {
+    background-color: #c2545f;
+    border-color: #c2545f;
+    color: white;
+}
+
+.progress-bar-dark {
+    background-color: #282b2e;
+    border-color: #282b2e;
+    color: white;
+}

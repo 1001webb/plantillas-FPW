@@ -1,0 +1,324 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/**********************************************************************************************************************  BTN  */
+/*Estilo basico de boton*/
+.btn {
+    font-weight: normal;
+    font-size: 1rem;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    padding: 0.375rem 0.75rem;
+    line-height: 1.5rem;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+/*****************************************************************  BTN PROPERTIES  */
+.rounded {
+    border-radius: 1.5rem;
+}
+
+.square {
+    border-radius: 0px;
+}
+
+.btn-lg {
+    padding: 0.5rem 1rem;
+    font-size: 1.25rem;
+    line-height: 2rem;
+    border-radius: 0.3rem;
+}
+
+.btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    line-height: 1rem;
+    border-radius: 0.3rem;
+}
+
+/*****************************************************************  DEFAULT  */
+.btn-default {
+    background-color: grey;
+    border-color: grey;
+}
+
+.btn-default-inverted {
+    background-color: transparent;
+    border-color: grey;
+    color: grey;
+}
+
+.btn-default:hover,
+.btn-default-inverted:hover {
+    color: #fff;
+    background-color: #5a6268;
+    border-color: #545b62;
+}
+
+.btn-default-inverted:focus,
+.btn-default-inverted.focus,
+.btn-default:focus,
+.btn-default.focus {
+    box-shadow: 0 0 0 0.2rem #6c757d80;
+}
+
+/*****************************************************************  PRIMARY  */
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary-inverted {
+    background-color: transparent;
+    border-color: #007bff;
+    color: #007bff;
+}
+
+.btn-primary:hover,
+.btn-primary-inverted:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-primary-inverted:focus,
+.btn-primary-inverted.focus,
+.btn-primary:focus,
+.btn-primary.focus {
+    box-shadow: 0 0 0 0.2rem #007bff80;
+}
+
+/*****************************************************************  SUCCESS  */
+.btn-success {
+    background-color: #158d33;
+    border-color: #158d33;
+}
+
+.btn-success-inverted {
+    background-color: transparent;
+    border-color: #158d33;
+    color: #158d33;
+}
+
+.btn-success:hover,
+.btn-success-inverted:hover {
+    color: #fff;
+    background-color: #146428;
+    border-color: #146428;
+}
+
+.btn-success-inverted:focus,
+.btn-success-inverted.focus,
+.btn-success:focus,
+.btn-success.focus {
+    box-shadow: 0 0 0 0.2rem #28a74580;
+}
+
+/*****************************************************************  INFO  */
+.btn-info {
+    background-color: #00a2b6;
+    border-color: #00a2b6;
+}
+
+.btn-info-inverted {
+    background-color: transparent;
+    border-color: #00a2b6;
+    color: #00a2b6;
+}
+
+.btn-info:hover,
+.btn-info-inverted:hover {
+    color: #fff;
+    background-color: #138496;
+    border-color: #117a8b;
+}
+
+.btn-info-inverted:focus,
+.btn-info-inverted.focus,
+.btn-info:focus,
+.btn-info.focus {
+    box-shadow: 0 0 0 0.2rem #17a2b880;
+}
+
+/*****************************************************************  WARNING  */
+.btn-warning {
+    background-color: #ffc238;
+    border-color: #ffc238;
+    color: black;
+}
+
+.btn-warning-inverted {
+    background-color: transparent;
+    border-color: #ffc238;
+    color: #ffc238;
+}
+
+.btn-warning:hover,
+.btn-warning-inverted:hover {
+    color: #212529;
+    background-color: #a3821d;
+    border-color: #a3821d;
+}
+
+.btn-warning-inverted:focus,
+.btn-warning-inverted.focus,
+.btn-warning:focus,
+.btn-warning.focus {
+    box-shadow: 0 0 0 0.2rem #ffc10780;
+}
+
+/*****************************************************************  DANGER  */
+.btn-danger {
+    background-color: #c2545f;
+    border-color: #c2545f;
+}
+
+.btn-danger-inverted {
+    background-color: transparent;
+    border-color: #e73649;
+    color: #e73649;
+}
+
+.btn-danger:hover,
+.btn-danger-inverted:hover {
+    color: #fff;
+    background-color: #7e1721;
+    border-color: #7e1721;
+}
+
+.btn-danger-inverted:focus,
+.btn-danger-inverted.focus,
+.btn-danger:focus,
+.btn-danger.focus {
+    box-shadow: 0 0 0 0.2rem #dc354580;
+}
+
+/*****************************************************************  DARK  */
+.btn-dark {
+    background-color: #282b2e;
+    border-color: #282b2e;
+}
+
+.btn-dark-inverted {
+    background-color: transparent;
+    border-color: #282b2e;
+    color: #282b2e;
+}
+
+.btn-dark:hover,
+.btn-dark-inverted:hover {
+    color: #fff;
+    background-color: #000000;
+    border-color: #020202;
+}
+
+.btn-dark-inverted:focus,
+.btn-dark-inverted.focus,
+.btn-dark:focus,
+.btn-dark.focus {
+    box-shadow: 0 0 0 0.2rem #343a4080;
+}
+
+/*****************************************************************  LINK  */
+
+.btn-link {
+    background-color: transparent;
+    border-color: #ffff;
+    color: #007bff;
+}
+
+.btn-link-inverted {
+    background-color: #007bff;
+    border-color: #e5e6e7;
+    color: #e5e6e7;
+}
+
+.btn-link:hover,
+.btn-link-inverted:hover {
+    color: #0056b3;
+    text-decoration: underline;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btn-link-inverted:focus,
+.btn-link-inverted.focus,
+.btn-link:focus,
+.btn-link.focus {
+    text-decoration: underline;
+    border-color: transparent;
+    box-shadow: none;
+}
+
+/**********************************************************************************************************************  DROPDOWN  */
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    border: none;
+    cursor: pointer;
+}
+ 
+.dropbtn::after{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: 0.5em;
+    vertical-align: 0.255em;
+    content: "";
+    border-top: 0.3em solid;
+    border-right: 0.3em solid transparent;
+    border-bottom: 0;
+    border-left: 0.3em solid transparent;  
+}
+  
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f5eaea;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: rgb(216, 211, 211);}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+/**********************************************************************************************************************  SPLIT DROPDOWN  */
+.btn-group {
+    display: inline-flex;
+}
+
+.split-btn {
+    border-radius: 0.5rem 0 0 0.5rem;
+    margin-right: 0px;
+}
+
+.split-dropdown {
+    border-radius: 0 0.5rem 0.5rem 0;
+    margin-left: 0px;
+}
