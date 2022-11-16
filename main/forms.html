@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="nav-right visible-xs">
+        <div class="button" id="btn">
+            <div class="bar top"></div>
+            <div class="bar middle"></div>
+            <div class="bar bottom"></div>
+        </div>
+    </div>
+    <!-- nav-right -->
+    <main>
+        <nav>
+            <div class="nav-right hidden-xs">
+                <div class="button" id="btn">
+                    <div class="bar top"></div>
+                    <div class="bar middle"></div>
+                    <div class="bar bottom"></div>
+                </div>
+            </div>
+            <!-- nav-right -->
+        </nav>
+
+        <h1>Forms</h1>
+ 
+    </main>
+
+    <div class="sidebar">
+        <ul class="sidebar-list">
+            <li class="sidebar-item"><a href="./botones.html" class="sidebar-anchor">Botones</a></li>
+            <li class="sidebar-item"><a href="./tables.html" class="sidebar-anchor">Tablas</a></li>
+            <li class="sidebar-item"><a href="#" class="sidebar-anchor">Forms</a></li>
+            <li class="sidebar-item"><a href="./generals.html" class="sidebar-anchor">Generales</a></li>
+        </ul>
+
+    </div>
+
+</body>
+
+</html>
+
+
+
+<script>
+    $(document).ready(function () {
+
+        function toggleSidebar() {
+            $(".button").toggleClass("active");
+            $("main").toggleClass("move-to-left");
+            $(".sidebar-item").toggleClass("active");
+        }
+
+        $(".button").on("click tap", function () {
+            toggleSidebar();
+        });
+
+        $(document).keyup(function (e) {
+            if (e.keyCode === 27) {
+                toggleSidebar();
+            }
+        });
+
+    });
+
+</script>
