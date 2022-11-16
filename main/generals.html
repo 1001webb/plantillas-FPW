@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link href="styles/generals.css" rel="stylesheet" type="text/css">
+    <link href="styles/buttons.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Document</title>
 </head>
@@ -21,6 +23,330 @@
     </div>
     <!-- nav-right -->
     <main>
+
+        <div class="container">
+
+            <h1 class="title">Tabs</h1>
+
+            <h2 class="subtitle">Tab Sensilla</h2>
+
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openTad(event, 'tab-1')">Tab 1</button>
+                <button class="tablinks" onclick="openTad(event, 'tab-2')">Tab 2</button>
+                <button class="tablinks" onclick="openTad(event, 'tab-3')">Tab 3</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="tab-1" class="tabcontent">
+                <h3>Tab 1</h3>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</p>
+            </div>
+
+            <div id="tab-2" class="tabcontent">
+                <h3>Tab 2</h3>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</p>
+            </div>
+
+            <div id="tab-3" class="tabcontent">
+                <h3>Tab 3</h3>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</p>
+            </div>
+
+            <pre><code>
+&lt;!-- Tab links --&gt;
+&lt;div class="tab"&gt;
+    &lt;button class="tablinks" onclick="openTad(event, 'tab-1')"&gt;Tab 1&lt;/button&gt;
+    &lt;button class="tablinks" onclick="openTad(event, 'tab-2')"&gt;Tab 2&lt;/button&gt;
+    &lt;button class="tablinks" onclick="openTad(event, 'tab-3')"&gt;Tab 3&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Tab content --&gt;
+&lt;div id="tab-1" class="tabcontent"&gt;
+    &lt;h3&gt;Tab 1&lt;/h3&gt;
+    &lt;p&gt;"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="tab-2" class="tabcontent"&gt;
+    &lt;h3&gt;Tab 2&lt;/h3&gt;
+    &lt;p&gt;"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="tab-3" class="tabcontent"&gt;
+    &lt;h3&gt;Tab 3&lt;/h3&gt;
+    &lt;p&gt;"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"&lt;/p&gt;
+&lt;/div&gt;
+
+function openTad(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+            </code></pre>
+
+
+
+            <h2 class="subtitle">Tab Oscura</h2>
+
+            <!-- Tab links -->
+            <div class="tab tab-dark">
+                <button class="tablinks" onclick="openTad(event, 'tab-4')">Tab 4</button>
+                <button class="tablinks" onclick="openTad(event, 'tab-5')">Tab 5</button>
+                <button class="tablinks" onclick="openTad(event, 'tab-6')">Tab 6</button>
+            </div>
+
+            <!-- Tab content -->
+            <div id="tab-4" class="tabcontent">
+                <h3>Tab 4</h3>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</p>
+            </div>
+
+            <div id="tab-5" class="tabcontent">
+                <h3>Tab 5</h3>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</p>
+            </div>
+
+            <div id="tab-6" class="tabcontent">
+                <h3>Tab 6</h3>
+                <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"</p>
+            </div>
+
+            <pre><code>
+&lt;div class="tab tab-dark"&gt;
+    &lt;button class="tablinks" onclick="openTad(event, 'tab-4')"&gt;Tab 4&lt;/button&gt;
+    &lt;button class="tablinks" onclick="openTad(event, 'tab-5')"&gt;Tab 5&lt;/button&gt;
+    &lt;button class="tablinks" onclick="openTad(event, 'tab-6')"&gt;Tab 6&lt;/button&gt;
+&lt;/div&gt;
+
+&lt;!-- Tab content --&gt;
+&lt;div id="tab-4" class="tabcontent"&gt;
+    &lt;h3&gt;Tab 4&lt;/h3&gt;
+    &lt;p&gt;"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="tab-5" class="tabcontent"&gt;
+    &lt;h3&gt;Tab 5&lt;/h3&gt;
+    &lt;p&gt;"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div id="tab-6" class="tabcontent"&gt;
+    &lt;h3&gt;Tab 6&lt;/h3&gt;
+    &lt;p&gt;"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor"&lt;/p&gt;
+&lt;/div&gt;
+
+function openTad(evt, tabName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+}
+            </code></pre>
+
+            <h1 class="title">Lists</h1>
+
+            <ul class="list-dots">
+                <li>Lonely Bed - Albert Cummings</li>
+                <li>Evening - Tin Pan</li>
+                <li>Ain't Enough Whiskey - D Man</li>
+                <li>What In The World - Rory Gallagher</li>
+            </ul>
+
+            <ul class="list-squares">
+                <li>Tennessee Whiskey - Chris Stapleton</li>
+                <li>Old Love - Twelve Bar Blues Band</li>
+                <li>I Love You More You'll Ever Know - Oli Brown</li>
+                <li>Back To The Dirty Town - The Blues Mystery</li>
+            </ul>
+
+            <ul class="list-romans">
+                <li>Five Years Of Trouble - Gregg Giarelis</li>
+                <li>Love Me Tonight - Eva Carboni</li>
+                <li>Trouble - Blues Brandon Lane</li>
+                <li> Mean Blues - Floyd Lee</li>
+            </ul>
+
+            <ul class="list-numbers">
+                <li>Full Moon On The Main Street - Good Whiskey Blues</li>
+                <li>The Blues Ain't Never Gonna Die - Mike Griffin</li>
+                <li>Dont Wanna Sleep - Big Ed Sullivan</li>
+                <li>House Of The Rising Sun - Roxy Perry</li>
+            </ul>
+
+            <ul class="list-alphabet">
+                <li>Dona Oxford - Red White & Blues</li>
+                <li>The Blues Don't Knock - Johnnie Johnson</li>
+                <li>Softly Let Me Kiss Your Lips - Murali Coryell</li>
+                <li> If I Ever Loved Another Woman - Big Wolf Band</li>
+            </ul>
+
+            <pre><code>
+&lt;ul class="list-dots"&gt;
+    &lt;li&gt;Lonely Bed - Albert Cummings&lt;/li&gt;
+    &lt;li&gt;Evening - Tin Pan&lt;/li&gt;
+    &lt;li&gt;Ain't Enough Whiskey - D Man&lt;/li&gt;
+    &lt;li&gt;What In The World - Rory Gallagher&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="list-squares"&gt;
+    &lt;li&gt;Tennessee Whiskey - Chris Stapleton&lt;/li&gt;
+    &lt;li&gt;Old Love - Twelve Bar Blues Band&lt;/li&gt;
+    &lt;li&gt;I Love You More You'll Ever Know - Oli Brown&lt;/li&gt;
+    &lt;li&gt;Back To The Dirty Town - The Blues Mystery&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="list-romans"&gt;
+    &lt;li&gt;Five Years Of Trouble - Gregg Giarelis&lt;/li&gt;
+    &lt;li&gt;Love Me Tonight - Eva Carboni&lt;/li&gt;
+    &lt;li&gt;Trouble - Blues Brandon Lane&lt;/li&gt;
+    &lt;li&gt; Mean Blues - Floyd Lee&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="list-numbers"&gt;
+    &lt;li&gt;Full Moon On The Main Street - Good Whiskey Blues&lt;/li&gt;
+    &lt;li&gt;The Blues Ain't Never Gonna Die - Mike Griffin&lt;/li&gt;
+    &lt;li&gt;Dont Wanna Sleep - Big Ed Sullivan&lt;/li&gt;
+    &lt;li&gt;House Of The Rising Sun - Roxy Perry&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="list-alphabet"&gt;
+    &lt;li&gt;Dona Oxford - Red White & Blues&lt;/li&gt;
+    &lt;li&gt;The Blues Don't Knock - Johnnie Johnson&lt;/li&gt;
+    &lt;li&gt;Softly Let Me Kiss Your Lips - Murali Coryell&lt;/li&gt;
+    &lt;li&gt; If I Ever Loved Another Woman - Big Wolf Band&lt;/li&gt;
+&lt;/ul&gt;
+            </code></pre>
+
+            <h1 class="title">Progress Bar</h1>
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-default" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="100" style="width:40%">
+                    40% Complete (default)
+                </div>
+            </div>
+
+            <br>
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="100" style="width:45%">
+                    45% Complete (primary)
+                </div>
+            </div>
+            
+            <br>
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="100" style="width:50%">
+                    50% Complete (success)
+                </div>
+            </div>
+
+            <br>
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="100" style="width:55%">
+                    55% Complete (info)
+                </div>
+            </div>
+
+            <br>
+
+            <div class="progress">
+                <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="100" style="width:60%">
+                    60% Complete (warning)
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="progress">
+                <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="100" style="width:65%">
+                    65% Complete (danger)
+                </div>
+            </div>
+
+            <br>
+            
+            <div class="progress">
+                <div class="progress-bar progress-bar-dark" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+                    aria-valuemax="100" style="width:70%">
+                    70% Complete (dark)
+                </div>
+            </div>
+
+            <pre><code>
+&lt;div class="progress"&gt;
+    &lt;div class="progress-bar progress-bar-default" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+        aria-valuemax="100" style="width:40%"&gt;
+        40% Complete (default)
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress"&gt;
+    &lt;div class="progress-bar progress-bar-primary" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+        aria-valuemax="100" style="width:45%"&gt;
+        45% Complete (primary)
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress"&gt;
+    &lt;div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+        aria-valuemax="100" style="width:50%"&gt;
+        50% Complete (success)
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress"&gt;
+    &lt;div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+        aria-valuemax="100" style="width:55%"&gt;
+        55% Complete (info)
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress"&gt;
+    &lt;div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+        aria-valuemax="100" style="width:60%"&gt;
+        60% Complete (warning)
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress"&gt;
+    &lt;div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+        aria-valuemax="100" style="width:65%"&gt;
+        65% Complete (danger)
+        &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class="progress"&gt;
+    &lt;div class="progress-bar progress-bar-dark" role="progressbar" aria-valuenow="40" aria-valuemin="0"
+        aria-valuemax="100" style="width:70%"&gt;
+        70% Complete (dark)
+    &lt;/div&gt;
+&lt;/div&gt;
+            </code></pre>
+
+        </div>
+
         <nav>
             <div class="nav-right hidden-xs">
                 <div class="button" id="btn">
@@ -32,8 +358,6 @@
             <!-- nav-right -->
         </nav>
 
-        <h1>Generals</h1>
- 
     </main>
 
     <div class="sidebar">
@@ -72,5 +396,20 @@
         });
 
     });
+
+    function openTad(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+
 
 </script>

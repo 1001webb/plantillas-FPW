@@ -1,263 +1,164 @@
-
 body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
-.title{
-   
-    font-size: large;
+
+/**********************************************************************************************************************  TABS  */
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #f1f1f1;
+    background-color: #f1f1f1;
 }
 
-.container {
-    display: inline-block;
-    width: 100%;
-    padding-right: 0.5rem;
-    padding-left: 0.5rem;
-    margin-right: auto;
-    margin-left: auto;
+.tablinks {
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
 }
 
-/**********************************************************************************************************************  BTN  */
-/*Estilo basico de boton*/
-.btn{ 
-  font-weight: normal;
-  font-size: 1rem;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  color:white;
-  text-align: center;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  padding: 0.375rem 0.75rem;
-  line-height: 1.5rem;
-  cursor: pointer;
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
 }
 
-/*****************************************************************  BTN PROPERTIES  */
-
-/*Redondeado de boton*/
-.rounded{
-    border-radius: 1.5rem;
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgb(199, 197, 197);
+    color: white;
 }
 
-/*Tamaños*/
-.btn-lg{
-    padding: 0.5rem 1rem;
-    font-size: 1.25rem;
-    line-height: 2rem;
-    border-radius: 0.3rem;
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: rgb(94, 94, 94);
+    color: white;
 }
 
-.btn-sm{
-    padding: 0.5rem 1rem;
-    font-size: 1rem;
-    line-height: 1rem;
-    border-radius: 0.3rem;
+/* Style the tab content */
+.tabcontent {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
 }
 
-/*****************************************************************  DEFAULT  */
 
-.btn-default{
+/**********************************************************************************************************************  TAB DARK  */
+
+.tab-dark {
+    border: 1px solid #0f0f0f;
+    background-color: #0f0f0f;
+}
+
+.tab-dark .tablinks {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+}
+
+.tab-dark button:hover {
+    background-color: rgb(43, 43, 43);
+    color: white;
+}
+
+/* Create an active/current tablink class */
+.tab-dark button.active {
+    background-color: rgb(243, 242, 242);
+    color: black;
+}
+
+/**********************************************************************************************************************  LISTS  */
+ul.list-dots {
+    list-style-type: circle;
+}
+
+ul.list-squares {
+    list-style-type: square;
+}
+
+ul.list-romans {
+    list-style-type: upper-roman;
+}
+
+ul.list-numbers {
+    list-style-type: decimal;
+}
+
+ul.list-romans {
+    list-style-type: upper-roman;
+}
+
+ul.list-alphabet {
+    list-style-type: lower-alpha;
+}
+
+/**********************************************************************************************************************  PROGRESS BAR  */
+.progress {
+  
+    display: flex;
+    height: 1rem;
+    overflow: hidden;
+    font-size: 0.75rem;
+    background-color: #e9ecef;
+    border-radius: 0.25rem;
+}
+
+.progress-bar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    background-color: #007bff;
+    transition: width 0.6s ease;
+}
+
+.progress-bar-default {
     background-color: grey;
     border-color: grey;
+    color: white;
 }
 
-.btn-default:hover {
-    color: #fff;
-    background-color: #5a6268;
-    border-color: #545b62;
-}
-  
-.btn-default:focus, .btn-default.focus {
-    box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
-}
-
-/*****************************************************************  PRIMARY  */
-
-.btn-primary{
+.progress-bar-primary {
     background-color: #007bff;
     border-color: #007bff;
+    color: white;
 }
 
-.btn-primary:hover {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
-  }
-  
-.btn-primary:focus, .btn-primary.focus {
-    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+.progress-bar-success {
+    background-color: #158d33;
+    border-color: #158d33;
+    color: white;
 }
 
-/*****************************************************************  SUCCESS  */
-
-.btn-success{
-    background-color: #00b99b;
-    border-color: #00b99b;
+.progress-bar-info {
+    background-color: #007bff;
+    color: white;
 }
 
-.btn-success:hover {
-    color: #fff;
-    background-color: #218838;
-    border-color: #1e7e34;
-}
-  
-.btn-success:focus, .btn-success.focus {
-    box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
-}
-
-/*****************************************************************  INFO  */
-
-.btn-info{
-    background-color: #00a2b6;
-    border-color: #00a2b6;
-}
-
-.btn-info:hover {
-    color: #fff;
-    background-color: #138496;
-    border-color: #117a8b;
-}
-  
-.btn-info:focus, .btn-info.focus {
-    box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
-}
-
-/*****************************************************************  WARNING  */
-
-.btn-warning{
+.progress-bar-warning {
     background-color: #ffc238;
     border-color: #ffc238;
     color: black;
 }
 
-.btn-warning:hover {
-    color: #212529;
-    background-color: #ebb71d;
-    border-color: #ebb71d;
-}
-  
-.btn-warning:focus, .btn-warning.focus {
-    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.5);
+.progress-bar-danger {
+    background-color: #c2545f;
+    border-color: #c2545f;
+    color: white;
 }
 
-/*****************************************************************  DANGER  */
-
-.btn-danger{
-    background-color: #e73649;
-    border-color: #e73649;
+.progress-bar-dark {
+    background-color: #282b2e;
+    border-color: #282b2e;
+    color: white;
 }
-
-.btn-danger:hover {
-    color: #fff;
-    background-color: #c82333;
-    border-color: #bd2130;
-}
-  
-.btn-danger:focus, .btn-danger.focus {
-    box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.5);
-}
-
-/*****************************************************************  DARK  */
-
-.btn-dark{
-    background-color: #485f70;
-    border-color: #485f70;
-}
-
-.btn-dark:hover {
-    color: #fff;
-    background-color: #23272b;
-    border-color: #1d2124;
-}
-  
-.btn-dark:focus, .btn-dark.focus {
-    box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
-}
-
-/*****************************************************************  LINK  */
-
-.btn-link{
-    background-color: transparent;
-    border-color: #ffff;
-    color: #007bff;
-}
-
-.btn-link:hover {
-    color: #0056b3;
-    text-decoration: underline;
-    background-color: transparent;
-    border-color: transparent;
-  }
-  
-.btn-link:focus, .btn-link.focus {
-    text-decoration: underline;
-    border-color: transparent;
-    box-shadow: none;
-}
-
-/**********************************************************************************************************************  DROPDOWN  */ 
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-/* Dropdown Button */
-.dropbtn {
-    border: none;
-    cursor: pointer;
-}
- 
-.dropbtn::after{
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-left: 0.5em;
-    vertical-align: 0.255em;
-    content: "";
-    border-top: 0.3em solid;
-    border-right: 0.3em solid transparent;
-    border-bottom: 0;
-    border-left: 0.3em solid transparent;  
-}
-  
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f5eaea;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: rgb(216, 211, 211);}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
-
-  /**********************************************************************************************************************  SPLIT DROPDOWN  */ 
-
-  .btn-group {
-    display: flex;
-    margin-right: 0.5rem;
-  }
-
-  .split-btn{
-    border-radius: 0.5rem 0 0 0.5rem;
-  }
-
-  .split-dropdown{
-    border-radius: 0 0.5rem 0.5rem 0;
-  }
